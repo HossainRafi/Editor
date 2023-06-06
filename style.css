@@ -98,6 +98,9 @@ a {
   text-decoration: none;
   border: none;
 }
+.hide {
+  display: none;
+}
 
 /* ==================Responsive Design=================== */
 @media screen and (max-width: 1200px) {
