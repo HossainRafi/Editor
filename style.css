@@ -44,8 +44,14 @@ label {
   width: 10em;
   font-size: 1em;
   text-align: center;
-  padding: .5em 0;
+  padding: 0.5em 0;
   border-radius: 0.3em;
   margin: auto;
   cursor: pointer;
+}
+.image-container {
+  margin-bottom: 1em;
+}
+img {
+  max-width: 100%;
 }
