@@ -41,7 +41,7 @@ label {
   display: block;
   background-color: #025bee;
   color: #ffffff;
-  width: 10em;
+  width: 100%;
   font-size: 1em;
   text-align: center;
   padding: 0.5em 0;
@@ -62,12 +62,15 @@ img {
   justify-content: space-between;
 }
 .options-btn button {
-  background-color: #dceafe;
+  background-color: #d4e7ff;
   color: #025bee;
+  border: 1px solid #025bee;
   border-radius: 0.3em;
   font-size: 0.8em;
-  height: 3.2em;
+  font-weight: 600;
+  height: 3em;
   width: 3.2em;
+  cursor: pointer;
 }
 .options-btn button img {
   width: 1.1em;
