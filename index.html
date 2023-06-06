@@ -21,7 +21,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="editor-container"></div>
+      <div class="editor-container">
+        <div class="image-container">
+          <img id="image" />
+        </div>
+        <input type="file" id="file" accept="image/*" />
+        <label for="file">Open A Photo</label>
+      </div>
       <div class="preview-container"></div>
     </div>
     <!-- Script -->
