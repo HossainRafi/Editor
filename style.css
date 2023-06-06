@@ -4,8 +4,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: #ba8bffd2;
+body {
+  background-color: #ba8bffd2;
 }
 .wrapper {
   width: 90%;
@@ -16,4 +16,21 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.editor-container,
+.preview-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #d4ecff;
+  padding: 2em 1em;
+  box-shadow: 0 1.25em 4em #08064b26;
+  border-radius: 0.5em;
+}
+.editor-container {
+  margin: 0 0.6em 0 0;
+}
+.preview-container {
+  display: grid;
+  place-items: center;
 }
