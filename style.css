@@ -55,6 +55,13 @@ label {
 img {
   max-width: 100%;
 }
+button,
+a {
+  border: none;
+  outline: none;
+  place-items: center;
+  cursor: pointer;
+}
 .options-btn {
   margin-top: 1em;
   display: flex;
@@ -90,4 +97,23 @@ img {
   border-radius: 0.3em;
   text-decoration: none;
   border: none;
+}
+
+/* ==================Responsive Design=================== */
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 1em;
+  }
+  img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .editor-container {
+    margin: 0 0 0.6em 0;
+  }
 }
