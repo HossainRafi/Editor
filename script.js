@@ -45,3 +45,14 @@ fileInput.onchange = () => {
   };
   fileName = fileInput.files[0].name.split(".")[0];
 };
+
+//Change Aspect Ratio ============================================
+aspectRatioBtns.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (element.innerText == "Free") {
+      cropper.setAspectRatio(NaN);
+    } else {
+      cropper.setAspectRatio(eval(element.innerText.replace(":", "/")));
+    }
+  });
+});
