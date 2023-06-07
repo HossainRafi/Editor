@@ -66,7 +66,7 @@ rotateLeftButton.addEventListener("click", () => {
   cropper.rotate(rotateLeftValue);
 });
 
-// Function to preview output image ===================================
+// Preview output image ===================================
 previewButton.addEventListener("click", () => {
   downloadButton.classList.remove("hide");
   let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
