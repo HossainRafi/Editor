@@ -17,7 +17,7 @@ let scaleXClick = false,
 let rotateRightValue = -45,
   rotateLeftValue = 45;
 
-//   Load window function =======================================
+// Load window function =======================================
 window.onload = () => {
   downloadButton.classList.add("hide");
   options.classList.add("hide");
@@ -26,16 +26,16 @@ window.onload = () => {
 
 // Upload and read file ===================================================
 fileInput.onchange = () => {
-  //The FileReader object helps tp read contents of file stored on computer
+  // The FileReader object helps tp read contents of file stored on computer
   let reader = new FileReader();
-  //readAsDataURL read the content of input file
+  // readAsDataURL read the content of input file
   reader.readAsDataURL(fileInput.files[0]);
   reader.onload = () => {
-    //onload is triggered after file reading operation is successfully completed
-    //set src attribute of image to the result/input file
+    // onload is triggered after file reading operation is successfully completed
+    // set src attribute of image to the result/input file
     image.setAttribute("src", reader.result);
-    //set filename for setting downloaded file name later
-    //initialize cropper
+    // set filename for setting downloaded file name later
+    // initialize cropper
     if (cropper) {
       cropper.destroy();
     }
@@ -46,7 +46,7 @@ fileInput.onchange = () => {
   fileName = fileInput.files[0].name.split(".")[0];
 };
 
-//Change Aspect Ratio ============================================
+// Change Aspect Ratio ============================================
 aspectRatioBtns.forEach((element) => {
   element.addEventListener("click", () => {
     if (element.innerText == "Free") {
@@ -57,11 +57,18 @@ aspectRatioBtns.forEach((element) => {
   });
 });
 
-//Function for rotate buttons =======================================
+// Function for rotate buttons =======================================
 rotateRightButton.addEventListener("click", () => {
   cropper.rotate(rotateRightValue);
 });
 
 rotateLeftButton.addEventListener("click", () => {
   cropper.rotate(rotateLeftValue);
+});
+
+//Function to preview output image
+previewButton.addEventListener("click", () => {
+  downloadButton.classList.remove("hide");
+  let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
+  previewImage.src = imgSrc;
 });
