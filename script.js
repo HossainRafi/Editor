@@ -77,6 +77,17 @@ scaleXButton.addEventListener("click", () => {
   }
 });
 
+// Flip horizontally ===========================================
+scaleYButton.addEventListener("click", () => {
+  if (scaleYClick) {
+    cropper.scaleY(1);
+    scaleYClick = false;
+  } else {
+    cropper.scaleY(-1);
+    scaleYClick = true;
+  }
+});
+
 // Preview output image ===================================
 previewButton.addEventListener("click", () => {
   downloadButton.classList.remove("hide");
