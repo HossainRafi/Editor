@@ -66,6 +66,17 @@ rotateLeftButton.addEventListener("click", () => {
   cropper.rotate(rotateLeftValue);
 });
 
+// Flip vertically ============================================
+scaleXButton.addEventListener("click", () => {
+  if (scaleXClick) {
+    cropper.scaleX(1);
+    scaleXClick = false;
+  } else {
+    cropper.scaleX(-1);
+    scaleXClick = true;
+  }
+});
+
 // Preview output image ===================================
 previewButton.addEventListener("click", () => {
   downloadButton.classList.remove("hide");
