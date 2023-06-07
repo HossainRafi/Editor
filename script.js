@@ -49,7 +49,7 @@ fileInput.onchange = () => {
 // Change Aspect Ratio ============================================
 aspectRatioBtns.forEach((element) => {
   element.addEventListener("click", () => {
-    if (element.innerText == "Free") {
+    if (element.innerText == "Reset") {
       cropper.setAspectRatio(NaN);
     } else {
       cropper.setAspectRatio(eval(element.innerText.replace(":", "/")));
