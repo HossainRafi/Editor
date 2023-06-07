@@ -1,3 +1,4 @@
+// Initial references ==========================================
 let fileInput = document.getElementById("file");
 let image = document.getElementById("image");
 let downloadButton = document.getElementById("download");
@@ -15,3 +16,10 @@ let scaleXClick = false,
   scaleYClick = false;
 let rotateRightValue = -45,
   rotateLeftValue = 45;
+
+//   Load window function =======================================
+window.onload = () => {
+  downloadButton.classList.add("hide");
+  options.classList.add("hide");
+  previewButton.classList.add("hide");
+};
