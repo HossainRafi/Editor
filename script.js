@@ -56,3 +56,12 @@ aspectRatioBtns.forEach((element) => {
     }
   });
 });
+
+//Function for rotate buttons =======================================
+rotateRightButton.addEventListener("click", () => {
+  cropper.rotate(rotateRightValue);
+});
+
+rotateLeftButton.addEventListener("click", () => {
+  cropper.rotate(rotateLeftValue);
+});
