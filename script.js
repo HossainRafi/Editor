@@ -94,3 +94,12 @@ previewButton.addEventListener("click", () => {
   let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
   previewImage.src = imgSrc;
 });
+
+// Download the edited image ===============================
+downloadButton.addEventListener("click", (e) => {
+  // Get result
+  let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
+  // Download name
+  downloadButton.download = `cropped_${fileName}.png`;
+  downloadButton.setAttribute("href", imgSrc);
+});
