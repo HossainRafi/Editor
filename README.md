@@ -1,8 +1,6 @@
 ## Project Name: [ImageEditor](https://imgeditor-js.netlify.app)
 
-## Project Live Link: [ImageEditor](https://imgeditor-js.netlify.app)
-
-### Technology Used:
+### Tech Stack:
 - HTML
 - CSS
 - JavaScript
