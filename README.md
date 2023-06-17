@@ -1,4 +1,4 @@
-## Project Name: [ImageEditor](https://imgeditor-js.netlify.app)
+## Project Name: [ImgEditor](https://imgeditor-js.netlify.app)
 
 ### Tech Stack:
 - HTML
